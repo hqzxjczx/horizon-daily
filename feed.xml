@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://edwardmiller135798.github.io/horizon-daily/feed.xml" rel="self" type="application/atom+xml" /><link href="https://edwardmiller135798.github.io/horizon-daily/" rel="alternate" type="text/html" /><updated>2026-11-05T19:25:19+00:00</updated><id>https://edwardmiller135798.github.io/horizon-daily/feed.xml</id><title type="html">Horizon Daily</title><subtitle>AI-curated daily digest of tech and research news</subtitle><entry xml:lang="en"><title type="html">Horizon Summary: 2026-11-05 (EN)</title><link href="https://edwardmiller135798.github.io/horizon-daily/2026/11/05/summary-en.html" rel="alternate" type="text/html" title="Horizon Summary: 2026-11-05 (EN)" /><published>2026-11-05T00:00:00+00:00</published><updated>2026-11-05T00:00:00+00:00</updated><id>https://edwardmiller135798.github.io/horizon-daily/2026/11/05/summary-en</id><content type="html" xml:base="https://edwardmiller135798.github.io/horizon-daily/2026/11/05/summary-en.html"><![CDATA[<blockquote>
+  <p>From 42 items, 8 important content pieces were selected</p>
+</blockquote>
+
+<hr />
+
+<p><strong>Technology News</strong></p>
+<ol>
+  <li><a href="#item-tech-news-1">OpenSSH 10.6p2 fixes musl crypt() password bypass on Alpine</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-2">DialFork Benchmarks Procedural Hallucination in Conversational Agents</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-3">小米机器人 Agent 系统在青年公寓试运营</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-4">ULC Audio Codec Enables Real-Time 44.1kHz Stereo on N64</a> ⭐️ 7.0/10</li>
+  <li><a href="#item-tech-news-5">600k Nvidia H200 GPUs Stuck in Hong Kong Awaiting Beijing Approval</a> ⭐️ 7.0/10</li>
+</ol>
+
+<p><strong>Financial News</strong></p>
+<ol>
+  <li><a href="#item-finance-news-1">China Blocks SoftBank $5.4B ABB Robotics Deal</a> ⭐️ 9.0/10</li>
+  <li><a href="#item-finance-news-2">美光因劳资纠纷暂停桃园 45 亿美元建厂</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-finance-news-3">Chip Selloff Drives Nasdaq 100 Down 5%</a> ⭐️ 8.0/10</li>
+</ol>
+
+<hr />
+
+<h2 id="technology-news">Technology News</h2>
+
+<p><a id="item-tech-news-1"></a></p>
+<h3 id="openssh-106p2-fixes-musl-crypt-password-bypass-on-alpine-️-8010"><a href="https://sshhole.com/">OpenSSH 10.6p2 fixes musl crypt() password bypass on Alpine</a> ⭐️ 8.0/10</h3>
+
+<p>OpenSSH 10.6p2 released November 5 fixes a vulnerability allowing 257-1024 byte passwords to bypass SSH authentication on musl-based systems without PAM. The flaw affects Alpine Linux 3.16+ when password authentication is enabled, at least one account has &#x27;*&#x27; as password hash in /etc/shadow, and another account has a valid password. Alpine has published fixed packages; mitigation is setting PasswordAuthentication no. No exploitation reports exist yet.</p>
+
+<p>hackernews · josemrb · Nov 5, 12:19 · <a href="https://news.ycombinator.com/item?id=50378228">Discussion</a></p>
+
+<p><strong>「Background」</strong> Musl libc crypt() implementation uses in-band signaling where "*" indicates both "no password set" and "hashing error". This design flaw existed since 2016 in musl-based systems including Alpine Linux, OpenWRT, and buildroot with default configurations. OpenSSH 10.6p2 released November 5, 2026 fixes the bypass by adding password length validation before calling crypt(). Alpine Linux published patches for versions 3.16 and later.</p>
+
+<p><strong>「Impact」</strong> Alpine Linux containers and VMs running OpenSSH with musl libc and password authentication enabled are vulnerable to authentication bypass via 257-1024 byte passwords when any account has &#x27;*&#x27; as password hash. Attackers with network access and valid username can log into key-only accounts. No exploitation reported yet. Fix: upgrade OpenSSH to 10.6p2 or apply Alpine security patches for 3.16+. Immediate workaround: set PasswordAuthentication no in sshd_config. Public Alpine images on container registries may be affected; verify base image patch level.</p>
+
+<p><strong>「Community discussion」</strong> Commenters note the headline overstates severity given multiple required conditions: musl libc, no PAM, password auth enabled, &#x27;*&#x27; hash present, and valid password on another account. The root cause is in-band signaling: musl&#x27;s crypt() returns &#x27;*&#x27; on hash failure, which matches the &#x27;*&#x27; sentinel used for disabled accounts in /etc/shadow. Musl previously fixed this for DES crypt but missed the SHA-256/512 code path.</p>
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/">Security advisory: openssh -server password authentication bypass</a></li>
+<li><a href="https://www.linux.org.ru/news/security/18414937">Обход аутентификации сервера OpenSSH на системах musl</a></li>
+<li><a href="https://cycode.com/blog/sshole-cve-2026-123158-openssh-alpine-linux-vulnerability/">sshole (CVE-2026-123158): OpenSSH Auth Bypass on Alpine | Cycode</a></li>
+<li><a href="https://security.alpinelinux.org/">Home — Alpine Security Tracker</a></li>
+
+</ul>
+</details>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#security</code>, <code class="language-plaintext highlighter-rouge">#ssh</code>, <code class="language-plaintext highlighter-rouge">#vulnerability</code>, <code class="language-plaintext highlighter-rouge">#musl</code>, <code class="language-plaintext highlighter-rouge">#crypt</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-2"></a></p>
+<h3 id="dialfork-benchmarks-procedural-hallucination-in-conversational-agents-️-8010"><a href="https://www.reddit.com/r/MachineLearning/comments/1xofjrn/dialfork_a_benchmark_for_procedural_hallucination/">DialFork Benchmarks Procedural Hallucination in Conversational Agents</a> ⭐️ 8.0/10</h3>
+
+<p>DialFork introduces first benchmark measuring procedural hallucination in conversational agents. Agents execute correct tool calls but skip required dialogue steps — asking, confirming, telling results. Three tasks: turn-level drift detection (Task 3), dialogue-level procedural distance (Task 2), set-level distribution comparison (Task 1). From Idiap Research Institute with Logitech collaboration. Open data, code, predictions, human judgments. Leaderboard on Hugging Face accepts CSV submissions.</p>
+
+<p>reddit · r/MachineLearning · /u/sergbur · Nov 5, 10:44</p>
+
+<p><strong>「Background」</strong> Procedural hallucination is third evaluation axis alongside factual accuracy and correct tool use. Most dialogue steps are agent utterances, not tool calls. Prior benchmarks focus on factual correctness or tool-use accuracy, not procedural adherence. DialFork simulates dialogues where agent follows procedure, then drifts at varying points across 24, 12, and 30 dialogue variants.</p>
+
+<p><strong>「Impact」</strong> Enables live guardrails via streaming drift detection, conversation retrieval by procedural similarity not just content, and regression monitoring after model upgrades. First standardized metric for procedural drift in LLM agents. Public leaderboard tracks progress on all three tasks.</p>
+
+<p><strong>「Community Discussion」</strong> Author posted on Reddit seeking feedback including critical. No substantive discussion in source yet.</p>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#benchmark</code>, <code class="language-plaintext highlighter-rouge">#conversational-agents</code>, <code class="language-plaintext highlighter-rouge">#procedural-hallucination</code>, <code class="language-plaintext highlighter-rouge">#LLM-evaluation</code>, <code class="language-plaintext highlighter-rouge">#dialogue-systems</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-3"></a></p>
+<h3 id="小米机器人-agent-系统在青年公寓试运营-️-8010"><a href="https://weibo.com/1749127163/5361796274981767">小米机器人 Agent 系统在青年公寓试运营</a> ⭐️ 8.0/10</h3>
+
+<p>Xiaomi Robotics-1 Agent system begins trial operation in youth apartments, completing 50+ tasks autonomously over 30+ minutes across multiple rooms.</p>
+
+<p>telegram · zaihuapd · Nov 5, 08:19</p>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#embodied-ai</code>, <code class="language-plaintext highlighter-rouge">#robotics</code>, <code class="language-plaintext highlighter-rouge">#xiaomi</code>, <code class="language-plaintext highlighter-rouge">#agent-systems</code>, <code class="language-plaintext highlighter-rouge">#real-world-deployment</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-4"></a></p>
+<h3 id="ulc-audio-codec-enables-real-time-441khz-stereo-on-n64-️-7010"><a href="https://phoboslab.org/log/2026/11/n64-ulc-codec">ULC Audio Codec Enables Real-Time 44.1kHz Stereo on N64</a> ⭐️ 7.0/10</h3>
+
+<p>Article details ULC codec achieving real-time 44.1kHz stereo decoding on N64 93.75MHz MIPS with minimal RAM. Codec uses clever bit-packing and fixed-point arithmetic for memory-efficient decoding. Targets embedded and retro systems with severe hardware constraints.</p>
+
+<p>hackernews · frostbyte7 · Nov 5, 12:51 · <a href="https://news.ycombinator.com/item?id=50378508">Discussion</a></p>
+
+<p><strong>「Background」</strong> Nintendo 64 audio historically relied on sequenced formats (MIDI-like) due to cartridge space and CPU limits; streaming PCM or MP3 was impractical. Fraunhofer MP3 patents forced Nintendo and Rare to license decoders from RAD Game Tools even when unused, creating a patent minefield for compressed audio on the console. The ULC codec avoids patented transforms, using fixed-point arithmetic and bit-packing tailored to the 93.75 MHz MIPS R4300i and 4 MB RDRAM, enabling real-time 44.1 kHz stereo decode without licensing fees.</p>
+
+<p><strong>「Impact」</strong> Developers gain reference implementation for ultra-low-resource audio decoding on vintage MIPS hardware. Techniques applicable to other constrained embedded platforms needing software-only audio playback.</p>
+
+<p><strong>「Community Discussion」</strong> Commenters note original N64 MP3 decoder required patent licensing from Fraunhofer via RAD Game Tools; ULC avoids this minefield. One user confirms demo audio quality matches source track limitations. Another expresses interest in writing custom codec inspired by approach.</p>
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/L3enc">L3enc - Wikipedia</a></li>
+<li><a href="https://www.audiokinetic.com/en/community/blog/video-game-sound-archiving-part-2/">Video Game Sound Archiving | Part 2: Conker ... - Audiokinetic</a></li>
+
+</ul>
+</details>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#audio-codec</code>, <code class="language-plaintext highlighter-rouge">#n64</code>, <code class="language-plaintext highlighter-rouge">#retro-computing</code>, <code class="language-plaintext highlighter-rouge">#embedded-systems</code>, <code class="language-plaintext highlighter-rouge">#compression</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-5"></a></p>
+<h3 id="600k-nvidia-h200-gpus-stuck-in-hong-kong-awaiting-beijing-approval-️-7010"><a href="https://www.reuters.com/world/china/nvidia-chips-pile-up-hong-kong-china-withholds-import-approval-2026-11-05/">600k Nvidia H200 GPUs Stuck in Hong Kong Awaiting Beijing Approval</a> ⭐️ 7.0/10</h3>
+
+<p>Approximately 600,000 Nvidia H200 GPUs are stockpiled in Hong Kong awaiting Beijing import approval. A few Chinese internet firms have each received about 10,000 chips recently, with small volumes entering via intermediaries. The H200, while not Nvidia&#x27;s newest model, still outperforms domestic alternatives. As of late October, an 8-card H200 server in mainland China is quoted above 6 million RMB, roughly triple the price from a year ago.</p>
+
+<p>telegram · zaihuapd · Nov 5, 14:42</p>
+
+<p><strong>「Background」</strong> US export controls restrict advanced AI chip sales to China. Nvidia previously sold cut-down H800 and H20 variants; H200 is a newer high-performance GPU now caught in tightened licensing. Beijing import approval required for large shipments.</p>
+
+<p><strong>「Impact」</strong> Chinese AI firms face severe compute capacity constraints as geopolitical export controls restrict H200 supply, driving server costs up 3x and forcing reliance on inferior domestic alternatives or limited indirect channels.</p>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#hardware</code>, <code class="language-plaintext highlighter-rouge">#AI</code>, <code class="language-plaintext highlighter-rouge">#supply-chain</code>, <code class="language-plaintext highlighter-rouge">#geopolitics</code>, <code class="language-plaintext highlighter-rouge">#China</code></p>
+
+<hr />
+
+<h2 id="financial-news">Financial News</h2>
+
+<p><a id="item-finance-news-1"></a></p>
+<h3 id="china-blocks-softbank-54b-abb-robotics-deal-️-9010"><a href="https://www.bloomberg.com/news/articles/2026-11-05/china-blocks-softbank-s-acquisition-of-abb-industrial-robot-unit">China Blocks SoftBank $5.4B ABB Robotics Deal</a> ⭐️ 9.0/10</h3>
+
+<p>Chinese regulators prohibited SoftBank&#x27;s $5.4B acquisition of ABB&#x27;s robotics unit on national security grounds, citing risks of industrial data and AI technology transfer overseas. ABB confirmed Nov 5 it received formal block notice from China&#x27;s foreign investment security review agency.</p>
+
+<p>telegram · zaihuapd · Nov 5, 10:44</p>
+
+<p><strong>「Background」</strong> China represents ~30% of ABB&#x27;s robotics market; regulators fear core industrial technology and supply chain data could be used to train foreign AI models, reflecting broader tightening of foreign M&amp;A scrutiny in strategic tech sectors.</p>
+
+<p><strong>「Impact」</strong> Deal termination halts SoftBank&#x27;s AI-robotics expansion strategy and signals heightened barriers for foreign buyers of Chinese-market-dependent industrial tech assets.</p>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#China regulation</code>, <code class="language-plaintext highlighter-rouge">#M&amp;amp;A</code>, <code class="language-plaintext highlighter-rouge">#robotics</code>, <code class="language-plaintext highlighter-rouge">#AI</code>, <code class="language-plaintext highlighter-rouge">#foreign investment</code>, <code class="language-plaintext highlighter-rouge">#SoftBank</code>, <code class="language-plaintext highlighter-rouge">#ABB</code></p>
+
+<hr />
+
+<p><a id="item-finance-news-2"></a></p>
+<h3 id="美光因劳资纠纷暂停桃园-45-亿美元建厂-️-8010"><a href="https://www.bloomberg.com/news/articles/2026-11-05/micron-pauses-work-on-4-5-billion-taiwan-plant-after-labor-spat">美光因劳资纠纷暂停桃园 45 亿美元建厂</a> ⭐️ 8.0/10</h3>
+
+<p>Micron halts $4.5B Taiwan fab construction over union dispute demanding 15% operating profit for global workers</p>
+
+<p>telegram · zaihuapd · Nov 5, 11:26</p>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#semiconductors</code>, <code class="language-plaintext highlighter-rouge">#labor-dispute</code>, <code class="language-plaintext highlighter-rouge">#Taiwan</code>, <code class="language-plaintext highlighter-rouge">#Micron</code>, <code class="language-plaintext highlighter-rouge">#supply-chain</code></p>
+
+<hr />
+
+<p><a id="item-finance-news-3"></a></p>
+<h3 id="chip-selloff-drives-nasdaq-100-down-5-️-8010"><a href="https://www.bloomberg.com/news/articles/2026-11-04/stock-market-today-dow-s-p-live-updates">Chip Selloff Drives Nasdaq 100 Down 5%</a> ⭐️ 8.0/10</h3>
+
+<p>On Nov 4, chip selloff deepened, sending Nasdaq 100 down 5% and Philadelphia Semiconductor Index 36% below its June high; Nvidia fell 7.9%, Qualcomm and Arm dropped on weak guidance, Tesla and SpaceX each slid about 10%.</p>
+
+<p>telegram · zaihuapd · Nov 5, 15:39</p>
+
+<p><strong>「Background」</strong> The selloff followed a Democratic sweep of Congress, raising fears of stricter AI regulation that could curb semiconductor demand.</p>
+
+<p><strong>「Impact」</strong> Investors rotated into defensive sectors like consumer staples and healthcare, while Treasuries, yen, and Swiss franc strengthened and Bitcoin fell 5%.</p>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#semiconductors</code>, <code class="language-plaintext highlighter-rouge">#nasdaq-100</code>, <code class="language-plaintext highlighter-rouge">#market-selloff</code>, <code class="language-plaintext highlighter-rouge">#ai-regulation</code>, <code class="language-plaintext highlighter-rouge">#defensive-rotation</code></p>
+
+<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[From 42 items, 8 important content pieces were selected]]></summary></entry><entry xml:lang="zh"><title type="html">Horizon Summary: 2026-11-05 (ZH)</title><link href="https://edwardmiller135798.github.io/horizon-daily/2026/11/05/summary-zh.html" rel="alternate" type="text/html" title="Horizon Summary: 2026-11-05 (ZH)" /><published>2026-11-05T00:00:00+00:00</published><updated>2026-11-05T00:00:00+00:00</updated><id>https://edwardmiller135798.github.io/horizon-daily/2026/11/05/summary-zh</id><content type="html" xml:base="https://edwardmiller135798.github.io/horizon-daily/2026/11/05/summary-zh.html"><![CDATA[<blockquote>
+  <p>从 42 条内容中筛选出 8 条重要资讯。</p>
+</blockquote>
+
+<hr />
+
+<p><strong>科技新闻</strong></p>
+<ol>
+  <li><a href="#item-tech-news-1">OpenSSH 10.6p2 修复 musl libc 长密码认证绕过漏洞</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-2">DialFork 基准测量对话代理程序幻觉</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-3">小米机器人 Agent 系统在青年公寓试运营</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-4">ULC 音频编解码器在 N64 上实现实时 44.1kHz 立体声解码</a> ⭐️ 7.0/10</li>
+  <li><a href="#item-tech-news-5">英伟达 H200 芯片积压香港待批 服务器价格三倍</a> ⭐️ 7.0/10</li>
+</ol>
+
+<p><strong>财经新闻</strong></p>
+<ol>
+  <li><a href="#item-finance-news-1">中国叫停软银 54 亿美元收购 ABB 机器人业务</a> ⭐️ 9.0/10</li>
+  <li><a href="#item-finance-news-2">美光因劳资纠纷暂停桃园 45 亿美元建厂</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-finance-news-3">芯片股重挫拖累纳指跌 5% 半导体指数较高点跌 36% 民主党横扫引发 AI 监管担忧</a> ⭐️ 8.0/10</li>
+</ol>
+
+<hr />
+
+<h2 id="科技新闻">科技新闻</h2>
+
+<p><a id="item-tech-news-1"></a></p>
+<h3 id="openssh-106p2-修复-musl-libc-长密码认证绕过漏洞-️-8010"><a href="https://sshhole.com/">OpenSSH 10.6p2 修复 musl libc 长密码认证绕过漏洞</a> ⭐️ 8.0/10</h3>
+
+<p>OpenSSH 10.6p2 于 11 月 5 日发布，修复 CVE 级漏洞：在使用 musl libc 且未启用 PAM 的系统上，若 /etc/shadow 中存在密码哈希为 &#x27;*&#x27; 的账户（即禁用密码登录的账户），攻击者可使用 256-1024 字节长密码绕过认证登录其他有效账户。Alpine Linux 3.16+ 已发布修复包；临时缓解措施为设置 PasswordAuthentication no。目前无在野利用报告。</p>
+
+<p>hackernews · josemrb · 11月5日 12:19 · <a href="https://news.ycombinator.com/item?id=50378228">社区讨论</a></p>
+
+<p><strong>「背景」</strong> 该漏洞源于 musl libc 的 crypt() 实现中对 SHA-256/512 哈希的处理缺陷，当密码哈希为 "*"（表示禁用密码登录）时，长度在 257 至 1024 字节的密码会导致 crypt() 返回 "*"，从而绕过认证。Alpine Linux 等基于 musl 的发行版受影响，问题自 2016 年起存在，OpenSSH 10.6p2 修复。</p>
+
+<p><strong>「影响与修复」</strong> Alpine Linux 上运行 musl libc 且未启用 PAM 的 OpenSSH 部署，若存在密码哈希为 &#x27;*&#x27; 的账户（如锁定账户或仅密钥登录账户），攻击者可用 257-1024 字节任意密码绕过认证登录。受影响用户需升级至 OpenSSH 10.6p2 或应用 Alpine 3.16+ 修复包，无法立即升级者应设置 PasswordAuthentication no 禁用密码登录。</p>
+
+<p><strong>「社区讨论」</strong> tonnydourado 指出漏洞触发条件苛刻：需 musl 编译 sshd、无 PAM、启用密码登录、至少一个 &#x27;*&#x27; 哈希账户、至少一个有效密码账户，实际风险低于标题暗示。mpyne 解释利用原理：crypt() 在特定长度下将长密码哈希结果与 &#x27;*&#x27; 相等，导致验证通过。BoppreH 归因于带内信号设计缺陷：&#x27;*&#x27; 同时用作“禁用密码”和“哈希错误”标记。amluto 补充 musl 已在 crypt_des 中修复同类问题，但遗漏了 crypt_sha256/512 路径。</p>
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/">Security advisory: openssh -server password authentication bypass</a></li>
+<li><a href="https://www.linux.org.ru/news/security/18414937">Обход аутентификации сервера OpenSSH на системах musl</a></li>
+<li><a href="https://cycode.com/blog/sshole-cve-2026-123158-openssh-alpine-linux-vulnerability/">sshole (CVE-2026-123158): OpenSSH Auth Bypass on Alpine | Cycode</a></li>
+<li><a href="https://security.alpinelinux.org/">Home — Alpine Security Tracker</a></li>
+
+</ul>
+</details>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#security</code>, <code class="language-plaintext highlighter-rouge">#ssh</code>, <code class="language-plaintext highlighter-rouge">#vulnerability</code>, <code class="language-plaintext highlighter-rouge">#musl</code>, <code class="language-plaintext highlighter-rouge">#crypt</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-2"></a></p>
+<h3 id="dialfork-基准测量对话代理程序幻觉-️-8010"><a href="https://www.reddit.com/r/MachineLearning/comments/1xofjrn/dialfork_a_benchmark_for_procedural_hallucination/">DialFork 基准测量对话代理程序幻觉</a> ⭐️ 8.0/10</h3>
+
+<p>DialFork 首个基准测量对话代理程序幻觉：代理工具调用正确但偏离对话流程。Idiap 研究院与 Logitech 合作发布。定义三任务：集合级程序距离（任务 1）、对话级程序距离（任务 2）、轮次级漂移检测（任务 3）。开放数据、代码、预测、人工判断。Hugging Face 排行榜、GitHub 代码、arXiv 论文、Hugging Face 数据集。</p>
+
+<p>reddit · r/MachineLearning · /u/sergbur · 11月5日 10:44</p>
+
+<p><strong>「背景」</strong> 当前评估关注事实准确性和工具使用正确性，忽略程序遵循。程序幻觉指代理流利、事实正确、工具调用正确，但未按要求步骤对话（如获取天气不告知用户转而询问评分）。DialFork 填补此空白。</p>
+
+<p><strong>「影响」</strong> 为对话代理评估提供第三维度，支持实时护栏、对话聚类、模型升级监控。开放排行榜推动社区改进。</p>
+
+<p><strong>「社区讨论」</strong> 作者在 Reddit 发布征求反馈，提供源内容未包含实质性社区讨论。</p>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#benchmark</code>, <code class="language-plaintext highlighter-rouge">#conversational-agents</code>, <code class="language-plaintext highlighter-rouge">#procedural-hallucination</code>, <code class="language-plaintext highlighter-rouge">#LLM-evaluation</code>, <code class="language-plaintext highlighter-rouge">#dialogue-systems</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-3"></a></p>
+<h3 id="小米机器人-agent-系统在青年公寓试运营-️-8010"><a href="https://weibo.com/1749127163/5361796274981767">小米机器人 Agent 系统在青年公寓试运营</a> ⭐️ 8.0/10</h3>
+
+<p>Xiaomi Robotics-1 Agent system begins trial operation in youth apartments, completing 50+ tasks autonomously over 30+ minutes across multiple rooms.</p>
+
+<p>telegram · zaihuapd · 11月5日 08:19</p>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#embodied-ai</code>, <code class="language-plaintext highlighter-rouge">#robotics</code>, <code class="language-plaintext highlighter-rouge">#xiaomi</code>, <code class="language-plaintext highlighter-rouge">#agent-systems</code>, <code class="language-plaintext highlighter-rouge">#real-world-deployment</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-4"></a></p>
+<h3 id="ulc-音频编解码器在-n64-上实现实时-441khz-立体声解码-️-7010"><a href="https://phoboslab.org/log/2026/11/n64-ulc-codec">ULC 音频编解码器在 N64 上实现实时 44.1kHz 立体声解码</a> ⭐️ 7.0/10</h3>
+
+<p>ULC 编解码器在 N64 的 93.75MHz MIPS CPU 上实现实时 44.1kHz 立体声解码，极少量 RAM。文章深入剖析位打包、定点运算、内存高效解码设计，适配复古/嵌入式系统。</p>
+
+<p>hackernews · frostbyte7 · 11月5日 12:51 · <a href="https://news.ycombinator.com/item?id=50378508">社区讨论</a></p>
+
+<p><strong>「背景」</strong> N64 仅有 4MB RDRAM（可扩展至 8MB）和 93.75MHz MIPS CPU，音频解码需在极小内存与算力下实时运行。1990 年代末 MP3 等主流编解码器受 Fraunhofer 等专利保护，商业游戏机需支付高额授权费；Nintendo 曾两次实现 MP3 解码器并最终向 RAD Game Tools 与 Fraunhofer 付费取得专利豁免。ULC 编解码器专为该硬件约束设计，采用定点运算与紧凑位打包，避开专利风险，适合复古平台与嵌入式场景。</p>
+
+<p><strong>「影响」</strong> 为复古游戏开发者和嵌入式音频工程师提供极简高保真方案，展示在严苛硬件约束下实现 CD 质量音频的可行路径。</p>
+
+<p><strong>「社区讨论」</strong> jonas21 指出演示音质差源于原曲而非编解码器；midnightclubbed 回顾 1999 年专利雷区导致 N64 MP3 解码器两次重写并最终授权 RAD；pona-a 表示想自写编解码器；pferdone 惊讶 Half-Life 能在 N64 运行。</p>
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/L3enc">L3enc - Wikipedia</a></li>
+
+</ul>
+</details>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#audio-codec</code>, <code class="language-plaintext highlighter-rouge">#n64</code>, <code class="language-plaintext highlighter-rouge">#retro-computing</code>, <code class="language-plaintext highlighter-rouge">#embedded-systems</code>, <code class="language-plaintext highlighter-rouge">#compression</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-5"></a></p>
+<h3 id="英伟达-h200-芯片积压香港待批-服务器价格三倍-️-7010"><a href="https://www.reuters.com/world/china/nvidia-chips-pile-up-hong-kong-china-withholds-import-approval-2026-11-05/">英伟达 H200 芯片积压香港待批 服务器价格三倍</a> ⭐️ 7.0/10</h3>
+
+<p>约 60 万颗英伟达 H200 GPU 积压香港，等待北京进口批准。路透社援引知情人士称，近月仅有少数中国互联网企业各获约 1 万颗，另有少量经中间商流入。H200 性能仍高于国产替代品，10 月底八卡服务器报价超 600 万元人民币，约为一年前三倍。</p>
+
+<p>telegram · zaihuapd · 11月5日 14:42</p>
+
+<p><strong>「背景」</strong> 美国 2022 年 10 月首轮出口管制切断 H100/A100 对华供应，英伟达随推 H800/H20 等降规合规芯片。2023 年 10 月新规再收紧算力阈值，H800 亦被禁。H200 为霍珀架构升级版，原被视为仍可合规出口中国的高性能 GPU，现因北京暂缓进口审批导致大量库存滞留香港。</p>
+
+<p><strong>「影响」</strong> 中国 AI 企业算力采购成本大幅上升，供应链不确定性迫使企业寻求替代方案或通过间接渠道采购。</p>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#hardware</code>, <code class="language-plaintext highlighter-rouge">#AI</code>, <code class="language-plaintext highlighter-rouge">#supply-chain</code>, <code class="language-plaintext highlighter-rouge">#geopolitics</code>, <code class="language-plaintext highlighter-rouge">#China</code></p>
+
+<hr />
+
+<h2 id="财经新闻">财经新闻</h2>
+
+<p><a id="item-finance-news-1"></a></p>
+<h3 id="中国叫停软银-54-亿美元收购-abb-机器人业务-️-9010"><a href="https://www.bloomberg.com/news/articles/2026-11-05/china-blocks-softbank-s-acquisition-of-abb-industrial-robot-unit">中国叫停软银 54 亿美元收购 ABB 机器人业务</a> ⭐️ 9.0/10</h3>
+
+<p>中国外国投资安全审查机构禁止软银集团以约 54 亿美元收购 ABB 机器人业务，理由为工业数据、供应链及核心技术可能转移海外并用于 AI 模型训练。</p>
+
+<p>telegram · zaihuapd · 11月5日 10:44</p>
+
+<p><strong>「背景」</strong> 中国占 ABB 机器人业务约 30%市场份额，此次叫停反映中国对战略科技领域外资并购审查趋严。</p>
+
+<p><strong>「影响」</strong> 软银布局 AI 与机器人产业计划受阻，跨境科技并购面临更严监管不确定性。</p>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#China regulation</code>, <code class="language-plaintext highlighter-rouge">#M&amp;amp;A</code>, <code class="language-plaintext highlighter-rouge">#robotics</code>, <code class="language-plaintext highlighter-rouge">#AI</code>, <code class="language-plaintext highlighter-rouge">#foreign investment</code>, <code class="language-plaintext highlighter-rouge">#SoftBank</code>, <code class="language-plaintext highlighter-rouge">#ABB</code></p>
+
+<hr />
+
+<p><a id="item-finance-news-2"></a></p>
+<h3 id="美光因劳资纠纷暂停桃园-45-亿美元建厂-️-8010"><a href="https://www.bloomberg.com/news/articles/2026-11-05/micron-pauses-work-on-4-5-billion-taiwan-plant-after-labor-spat">美光因劳资纠纷暂停桃园 45 亿美元建厂</a> ⭐️ 8.0/10</h3>
+
+<p>Micron halts $4.5B Taiwan fab construction over union dispute demanding 15% operating profit for global workers</p>
+
+<p>telegram · zaihuapd · 11月5日 11:26</p>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#semiconductors</code>, <code class="language-plaintext highlighter-rouge">#labor-dispute</code>, <code class="language-plaintext highlighter-rouge">#Taiwan</code>, <code class="language-plaintext highlighter-rouge">#Micron</code>, <code class="language-plaintext highlighter-rouge">#supply-chain</code></p>
+
+<hr />
+
+<p><a id="item-finance-news-3"></a></p>
+<h3 id="芯片股重挫拖累纳指跌-5-半导体指数较高点跌-36-民主党横扫引发-ai-监管担忧-️-8010"><a href="https://www.bloomberg.com/news/articles/2026-11-04/stock-market-today-dow-s-p-live-updates">芯片股重挫拖累纳指跌 5% 半导体指数较高点跌 36% 民主党横扫引发 AI 监管担忧</a> ⭐️ 8.0/10</h3>
+
+<p>11 月 4 日美股芯片板块抛售加剧，纳斯达克 100 指数下跌 5%，费城半导体指数较 6 月高点累计下跌 36%；英伟达跌 7.9%，高通和 Arm 因业绩指引不及预期下挫，特斯拉跌约 10%。</p>
+
+<p>telegram · zaihuapd · 11月5日 15:39</p>
+
+<p><strong>「背景」</strong> 民主党横扫国会选举引发市场担忧 AI 监管收紧，资金轮动至必需消费、医疗等防御板块，美债、日元、瑞郎走强，比特币下跌 5%。</p>
+
+<p><strong>「影响」</strong> 半导体及大型科技股估值承压，防御板块与避险资产受益，AI 监管不确定性可能持续拖累科技板块投资情绪。</p>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#semiconductors</code>, <code class="language-plaintext highlighter-rouge">#nasdaq-100</code>, <code class="language-plaintext highlighter-rouge">#market-selloff</code>, <code class="language-plaintext highlighter-rouge">#ai-regulation</code>, <code class="language-plaintext highlighter-rouge">#defensive-rotation</code></p>
+
+<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[从 42 条内容中筛选出 8 条重要资讯。]]></summary></entry></feed>
