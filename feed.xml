@@ -1,4 +1,636 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://hqzxjczx.github.io/horizon-daily/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hqzxjczx.github.io/horizon-daily/" rel="alternate" type="text/html" /><updated>2026-11-05T20:00:57+00:00</updated><id>https://hqzxjczx.github.io/horizon-daily/feed.xml</id><title type="html">My Horizon Daily</title><subtitle>AI-curated daily digest of tech and research news</subtitle><entry xml:lang="en"><title type="html">Horizon Summary: 2026-11-05 (EN)</title><link href="https://hqzxjczx.github.io/horizon-daily/2026/11/05/summary-en.html" rel="alternate" type="text/html" title="Horizon Summary: 2026-11-05 (EN)" /><published>2026-11-05T00:00:00+00:00</published><updated>2026-11-05T00:00:00+00:00</updated><id>https://hqzxjczx.github.io/horizon-daily/2026/11/05/summary-en</id><content type="html" xml:base="https://hqzxjczx.github.io/horizon-daily/2026/11/05/summary-en.html"><![CDATA[<blockquote>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://hqzxjczx.github.io/horizon-daily/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hqzxjczx.github.io/horizon-daily/" rel="alternate" type="text/html" /><updated>2026-11-07T16:17:39+00:00</updated><id>https://hqzxjczx.github.io/horizon-daily/feed.xml</id><title type="html">My Horizon Daily</title><subtitle>AI-curated daily digest of tech and research news</subtitle><entry xml:lang="en"><title type="html">Horizon Summary: 2026-11-07 (EN)</title><link href="https://hqzxjczx.github.io/horizon-daily/2026/11/07/summary-en.html" rel="alternate" type="text/html" title="Horizon Summary: 2026-11-07 (EN)" /><published>2026-11-07T00:00:00+00:00</published><updated>2026-11-07T00:00:00+00:00</updated><id>https://hqzxjczx.github.io/horizon-daily/2026/11/07/summary-en</id><content type="html" xml:base="https://hqzxjczx.github.io/horizon-daily/2026/11/07/summary-en.html"><![CDATA[<blockquote>
+  <p>From 43 items, 13 important content pieces were selected</p>
+</blockquote>
+
+<hr />
+
+<p><strong>Technology News</strong></p>
+<ol>
+  <li><a href="#item-tech-news-1">Jev-Opus cascade cuts cost 4x with same accuracy</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-2">Libghostty 1.0 stable terminal emulator library released</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-3">Apple ships undocumented family classifier daemons on all Macs since 2022</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-4">Ant Ling releases Ling-3.2-flash 560B/25B MoE 1M context multimodal model</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-5">Boson AI releases 45B MoE full-duplex model Higgs Realtime Duplex</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-6">Claude Code leaks login email in web searches, partial fix bypassable</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-7">Apple Reveals HALO Humanoid Robot System Using Qwen Models</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-8">GitHub Rubicon Git Storage Hits 7200 Pushes/sec</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-9">OnlyFake Founder Pleads Guilty, Deported After AI Fake ID Operation</a> ⭐️ 7.0/10</li>
+</ol>
+
+<p><strong>Financial News</strong></p>
+<ol>
+  <li><a href="#item-finance-news-1">全国 3.35 万座寺院启动财务大检查</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-finance-news-2">The AI ‘credit card’ is getting costlier as CoreWeave bond yield tops 16%</a> ⭐️ 7.0/10</li>
+  <li><a href="#item-finance-news-3">Anthropic Plans IPO Roadshow Next Week Targeting Nov 16 Listing Week</a> ⭐️ 7.0/10</li>
+  <li><a href="#item-finance-news-4">软银与 ABB 拟分拆中国业务挽救机器人交易</a> ⭐️ 7.0/10</li>
+</ol>
+
+<hr />
+
+<h2 id="technology-news">Technology News</h2>
+
+<p><a id="item-tech-news-1"></a></p>
+<h3 id="jev-opus-cascade-cuts-cost-4x-with-same-accuracy-️-8010"><a href="https://hightouch.com/blog/llm-judges-identity-resolution">Jev-Opus cascade cuts cost 4x with same accuracy</a> ⭐️ 8.0/10</h3>
+
+<p>Jev model routes to Opus only when needed. Achieves Opus-level accuracy at quarter cost. 65% token reduction reported in coding agents. Jev confidence scores reliable for escalation decisions.</p>
+
+<p>hackernews · theanomaly · Nov 6, 19:48 · <a href="https://news.ycombinator.com/item?id=50397429">Discussion</a></p>
+
+<p><strong>「Background」</strong> JEV-as-a-Judge paper introduces confidence-based escalation: cheap judge returns label probabilities, escalates to reasoning judge only when confidence below threshold. Hightouch applies this cascade to identity resolution, pairing Jev with Claude Opus. Earlier Horizon digests covered similar model routing for coding agents showing 63-65% token reduction.</p>
+
+<p><strong>「Impact」</strong> Developers can deploy cheaper routing layer without accuracy loss. Coding agents see 63-65% input token savings on read-heavy tasks.</p>
+
+<p><strong>「Community Discussion」</strong> Users confirm Jev reliably decides when to escalate to Opus or Qwen. Memdoor author reports 40-45% fewer model calls. Some note economics shift quickly, making optimal routing task-specific.</p>
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://arxiv.org/pdf/2609.26550v2">JEV-as-a-Judge: Accept When Confident, Escalate When Unsure</a></li>
+
+</ul>
+</details>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#LLM-routing</code>, <code class="language-plaintext highlighter-rouge">#cost-optimization</code>, <code class="language-plaintext highlighter-rouge">#model-cascading</code>, <code class="language-plaintext highlighter-rouge">#AI-systems</code>, <code class="language-plaintext highlighter-rouge">#software-engineering</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-2"></a></p>
+<h3 id="libghostty-10-stable-terminal-emulator-library-released-️-8010"><a href="https://mitchellh.com/writing/libghostty-1-0">Libghostty 1.0 stable terminal emulator library released</a> ⭐️ 8.0/10</h3>
+
+<p>Libghostty 1.0 releases stable terminal emulator library written in Zig with stable C ABI. Mitchell Hashimoto (Vagrant, Terraform creator) designed opaque handles and enum-keyed getters/setters for ABI stability. Library powers new terminals and agentic coding tools including herdr, cmux, and pi agent without rewriting emulator core. Kitty graphics protocol supports inline images; OSC-8 hyperlinks and fast viewport scrolling included.</p>
+
+<p>hackernews · mfiguiere · Nov 6, 23:30 · <a href="https://news.ycombinator.com/item?id=50399933">Discussion</a></p>
+
+<p><strong>「Background」</strong> Horizon&#x27;s September 22 digest reported Mitchell Hashimoto announced libghostty vision: embeddable C library for terminal emulation extracted from Ghostty core, with Zig implementation and stable ABI design. That article noted Zig module recently merged, C API not yet existed, and only Ghostty used it. Today 1.0 release fulfills that vision with stable library and ABI.</p>
+
+<p><strong>「Impact」</strong> Developers can embed full terminal emulation in applications via stable C ABI without maintaining emulator core. Zig projects reference API design patterns for opaque handles and enum-keyed accessors. Android terminal projects gain mature library option.</p>
+
+<p><strong>「Community Discussion」</strong> Commenters note Hashimoto avoided promoting competing product Rex. Zig developers study C API design for opaque handles and enum-keyed getters/setters. Users report pi agent TUI works exceptionally with Kitty graphics protocol for inline images, OSC-8 hyperlinks, and fast viewport scrolling with dynamic scrollbar.</p>
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://mitchellh.com/writing/libghostty-is-coming">Libghostty Is Coming – Mitchell Hashimoto</a></li>
+
+</ul>
+</details>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#terminal-emulator</code>, <code class="language-plaintext highlighter-rouge">#library</code>, <code class="language-plaintext highlighter-rouge">#zig</code>, <code class="language-plaintext highlighter-rouge">#abi-stability</code>, <code class="language-plaintext highlighter-rouge">#developer-tools</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-3"></a></p>
+<h3 id="apple-ships-undocumented-family-classifier-daemons-on-all-macs-since-2022-️-8010"><a href="https://8rank.ai/game/apple-intelligence-personal-knowledge-graph">Apple ships undocumented family classifier daemons on all Macs since 2022</a> ⭐️ 8.0/10</h3>
+
+<p>Research reveals every Mac since 2022 runs undocumented daemons that build personal knowledge graphs tracking users, relationships, communications, locations, and activities. Daemons operate without user consent or documentation. Author infwhispers published findings at 8rank.ai with follow-up research.</p>
+
+<p>hackernews · infwhispers · Nov 7, 09:46 · <a href="https://news.ycombinator.com/item?id=50403097">Discussion</a></p>
+
+<p><strong>「Background」</strong> Apple Community thread from January 2024 identified intelligenceplatformd and knowledgeconstructiond daemons building knowledge graphs in ~/Library/IntelligencePlatform for malware protection. Horizon&#x27;s October 2026 digest reported 8rank.ai demonstrated theoretical vulnerabilities in Apple&#x27;s personal knowledge graph when paired with LLMs. Current research by same author reveals undocumented family member classifier operating since 2022.</p>
+
+<p><strong>「Impact」</strong> Mac users have no visibility or control over persistent on-device profiling that continues even with Siri and Apple Intelligence disabled. Commenter Ungh reports daemons active despite all intelligence features turned off and blocked, prompting consideration of switching to Debian.</p>
+
+<p><strong>「Community Discussion」</strong> Commenters split: aetherspawn argues daemons enable local LLM context (identifying &#x27;James&#x27; or &#x27;boss&#x27; for Siri commands) and stay on-device, comparing to car navigation memory. Ungh calls it horrifying, notes activity persists with all intelligence features disabled. Author infwhispers confirms research and links follow-up analysis.</p>
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://emergent.sh/news/apple-knowledge-graph-security-flaw-exposed">Apple Knowledge Graph Security Flaw Exposed in AI Test</a></li>
+<li><a href="https://discussions.apple.com/thread/255450862">What is Graph.db in the ~/Library/Intelli… - Apple Community</a></li>
+
+</ul>
+</details>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#privacy</code>, <code class="language-plaintext highlighter-rouge">#apple</code>, <code class="language-plaintext highlighter-rouge">#on-device-ml</code>, <code class="language-plaintext highlighter-rouge">#knowledge-graph</code>, <code class="language-plaintext highlighter-rouge">#undocumented-features</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-4"></a></p>
+<h3 id="ant-ling-releases-ling-32-flash-560b25b-moe-1m-context-multimodal-model-️-8010"><a href="https://www.reddit.com/r/MachineLearning/comments/1xpye7g/ant_ling_introduces_ling32flash_560b25b_native/">Ant Ling releases Ling-3.2-flash 560B/25B MoE 1M context multimodal model</a> ⭐️ 8.0/10</h3>
+
+<p>Ant Ling releases Ling-3.2-flash, a native multimodal MoE model with 560B total parameters and 25B activated parameters. Supports text, image, and video inputs with 1M-token context window. Benchmarks: MathVision 96.8, Humanity&#x27;s Last Exam-MM 30.12, OmniDocBench 92.21, AndroidWorld 85.63. Provides OpenAI-compatible and Anthropic-compatible API access. Demonstrates PDF-to-code, GUI control, 3D reconstruction, and multi-agent workflows.</p>
+
+<p>reddit · r/MachineLearning · /u/the-hollow-soul · Nov 7, 05:21</p>
+
+<p><strong>「Background」</strong> Ant Ling previously released Ling-3.1-flash with 262K-token context and smaller parameter counts. Horizon&#x27;s earlier digest reported Ling-3.1-flash announcement without open weights. The new 3.2-flash expands context to 1M tokens, increases total parameters to 560B with 25B active, and adds native video input alongside text and image.</p>
+
+<p><strong>「Developer impact」</strong> Developers gain OpenAI/Anthropic API-compatible 560B/25B MoE model with 1M context, native text/image/video input. Drop-in replacement for existing multimodal pipelines. 25B active params lower inference cost vs dense 560B. Benchmarks show strong document understanding (OmniDocBench 92.21), GUI automation (AndroidWorld 85.63), math reasoning (MathVision 96.8). Action: test API compatibility, benchmark against current models for long-context multimodal tasks.</p>
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.orcarouter.ai/blog/ling-3-1-flash-announced-not-open-weights">Ling - 3 .1- flash : announced, not open — 560 B MoE , 1M context</a></li>
+<li><a href="https://artificialwatch.com/wire/ant-ling-3-1-flash">Ant Group&#x27;s Ling 3 .1 Flash is out: ~ 560 B MoE , weights promised &#x27;soon&amp;a...</a></li>
+
+</ul>
+</details>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#LLM</code>, <code class="language-plaintext highlighter-rouge">#MoE</code>, <code class="language-plaintext highlighter-rouge">#multimodal</code>, <code class="language-plaintext highlighter-rouge">#long-context</code>, <code class="language-plaintext highlighter-rouge">#model-release</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-5"></a></p>
+<h3 id="boson-ai-releases-45b-moe-full-duplex-model-higgs-realtime-duplex-️-8010"><a href="https://www.reddit.com/r/MachineLearning/comments/1xpn5pv/higgs_realtime_duplex_a_45b_moe_fullduplex_model/">Boson AI releases 45B MoE full-duplex model Higgs Realtime Duplex</a> ⭐️ 8.0/10</h3>
+
+<p>Boson AI announces Higgs Realtime Duplex, 45B MoE full-duplex model processing audio, video, text streams concurrently with background reasoning and tool delegation. Not open weights; Duplex API waitlist only. Previous turn-based Higgs Realtime available now. Architecture: 160ms chunks, audio in 1 token/chunk (6.25 tokens/s), audio out 2 tokens/chunk (12.5 tokens/s), video in ~12-token frame every 6 chunks, face out 2 latents/chunk. ~2.6K tokens/min audio+video, 2.6K-5K with thinking. Zero-shot deployment: short voice reference clip, one face image, text behavior prompt. Training: text-pretrained LLM, continued pretraining ~2T tokens on H100 cluster (Megatron), multi-teacher on-policy distillation with RL (GRPO), self-improvement loop in simulated environments. Benchmarks vs TML Interaction Small (276B), OpenAI best, Google best: Big Bench Audio 98.9, Audio MultiChallenge 44.9, Full-Duplex-Bench v1.5 75.5, QIVD streaming 56.0, ProactiveVideoQA 31.9, τ-Voice pass@1 69.8, IFEval 94.1. Turn-taking (Full-Duplex-Bench) furthest behind OpenAI. Demos: boson.ai/blog/higgs-realtime-duplex, write-up: alex.smola.org/posts/50-talking-while-thinking/.</p>
+
+<p>reddit · r/MachineLearning · /u/Cali_Cobarde · Nov 6, 20:23</p>
+
+<p><strong>「Background」</strong> Boson AI previously released Higgs Realtime, a turn-based voice model that processes audio in sequential listen-think-speak cycles. The new Duplex version replaces this with a full-duplex architecture that processes audio, video, and text streams simultaneously in 160 ms chunks while performing background reasoning and tool use.</p>
+
+<p><strong>「Impact」</strong> Full-duplex model not immediately usable — closed weights, API waitlist only. Turn-based Higgs Realtime available now. Zero-shot deployment (voice clip, face image, text prompt) reduces integration effort when access granted. Cost target: model time ~1/10 human hour cost. Benchmarks competitive vs larger closed models (276B TML, OpenAI, Google) on audio, video, interaction tasks. Turn-taking (Full-Duplex-Bench) remains weakest area.</p>
+
+<p><strong>「Community Discussion」</strong> Reddit thread shows mixed reaction: some praise technical depth and benchmark transparency, others note self-disclosed release limits independent verification. Key concerns: API waitlist only (no open weights), cost control harder with background thinking (10+ sec answers), turn-taking benchmark lagging OpenAI. Several users request independent reproduction of benchmarks. Author (Boson AI) engages in comments clarifying architecture details.</p>
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.boson.ai/blog/higgs-realtime-duplex">Higgs Realtime Duplex: Face to Face, Working in the ...</a></li>
+
+</ul>
+</details>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#multimodal</code>, <code class="language-plaintext highlighter-rouge">#real-time</code>, <code class="language-plaintext highlighter-rouge">#MoE</code>, <code class="language-plaintext highlighter-rouge">#voice-AI</code>, <code class="language-plaintext highlighter-rouge">#full-duplex</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-6"></a></p>
+<h3 id="claude-code-leaks-login-email-in-web-searches-partial-fix-bypassable-️-8010"><a href="https://github.com/anthropics/claude-code/issues/107757">Claude Code leaks login email in web searches, partial fix bypassable</a> ⭐️ 8.0/10</h3>
+
+<p>Claude Code includes user login email in web search requests, exposing it to sites like Wikipedia and SEC. Issue reported since July 2025. Root cause: Anthropic added email to model context to fix author attribution. Version 2.1.317 blocks email in requests but Python scripts bypass the filter. Anthropic plans full removal of login email from context in next version.</p>
+
+<p>telegram · zaihuapd · Nov 7, 08:09</p>
+
+<p><strong>「Background」</strong> Claude Code is Anthropic&#x27;s AI coding agent that integrates with IDEs and GitHub/GitLab for software development tasks. The tool includes a web search capability that sends requests to external sites like Wikipedia and SEC. Engineers added user login emails to model context to prevent Claude from inventing author names, but this caused emails to leak in search requests since July 2024.</p>
+
+<p><strong>「Impact」</strong> Developers using Claude Code web search have login emails exposed to third-party sites, leading to spam and scam emails. Current mitigation in v2.1.317 is incomplete; avoid web search or upgrade when full fix releases.</p>
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://github.com/anthropics/claude-code/issues/107757">Bug Report: Privacy violation in User-Agent header · Issue # 107757 ...</a></li>
+<li><a href="https://claude.com/product/claude-code">Claude Code by Anthropic | AI Coding Agent, Terminal, IDE</a></li>
+
+</ul>
+</details>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#security</code>, <code class="language-plaintext highlighter-rouge">#privacy</code>, <code class="language-plaintext highlighter-rouge">#claude-code</code>, <code class="language-plaintext highlighter-rouge">#anthropic</code>, <code class="language-plaintext highlighter-rouge">#vulnerability</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-7"></a></p>
+<h3 id="apple-reveals-halo-humanoid-robot-system-using-qwen-models-️-8010"><a href="https://weibo.com/1642634100/RqjjGllvw">Apple Reveals HALO Humanoid Robot System Using Qwen Models</a> ⭐️ 8.0/10</h3>
+
+<p>Apple research team published arXiv preprint Nov 4 describing HALO, a three-layer humanoid robot control system tested on Unitree G1. Top layer uses Qwen3.6-35B-A3B for task planning, middle layer uses Qwen3.5-2B for action generation, bottom layer uses RL-trained action tracker. System demonstrates sim-to-real transfer, executing skills learned in simulation in unfamiliar real rooms. Code for data generation, training, and deployment is open-sourced.</p>
+
+<p>telegram · zaihuapd · Nov 7, 13:35</p>
+
+<p><strong>「Background」</strong> Unitree G1 is a 29-DOF humanoid robot platform priced around $16,000 used for sim-to-real research. Apple HALO system validates on this hardware. Unitree provides Isaac Lab simulation environment and open-source simulation code for G1.</p>
+
+<p><strong>「Impact」</strong> Apple enters embodied AI with open-sourced HALO system using Qwen models on Unitree G1 hardware. Developers gain sim-to-real transfer pipeline for humanoid control with three-layer architecture: Qwen3.6-35B-A3B task planning, Qwen3.5-2B action generation, RL action tracker. Code release enables reproduction and extension on same hardware platform.</p>
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=GeMKJ2UscO4">Unitree &#x27;s New $16,000 Robot Plays REAL Tennis Against... - YouTube</a></li>
+<li><a href="https://github.com/unitreerobotics/unitree_sim_isaaclab">GitHub - unitreerobotics/ unitree _ sim _isaaclab: The Unitree ...</a></li>
+
+</ul>
+</details>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#robotics</code>, <code class="language-plaintext highlighter-rouge">#embodied-ai</code>, <code class="language-plaintext highlighter-rouge">#apple</code>, <code class="language-plaintext highlighter-rouge">#qwen</code>, <code class="language-plaintext highlighter-rouge">#sim2real</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-8"></a></p>
+<h3 id="github-rubicon-git-storage-hits-7200-pushessec-️-8010"><a href="https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/">GitHub Rubicon Git Storage Hits 7200 Pushes/sec</a> ⭐️ 8.0/10</h3>
+
+<p>GitHub unveils Rubicon Git storage architecture achieving 7200 pushes per second with 5000 concurrent AI agents in internal testing. Architecture stores Git objects in Azure Blob Storage, manages refs via Ref-CAS, uses virtual replicas for read/write, and background packfile compaction. Currently in limited private preview with gradual rollout planned.</p>
+
+<p>telegram · zaihuapd · Nov 7, 14:12</p>
+
+<p><strong>「Background」</strong> Traditional Git storage architectures struggle with high-concurrency write workloads from thousands of AI agents operating on a single repository. GitHub&#x27;s previous architecture used replicated file servers with synchronous coordination, creating bottlenecks at scale. The Rubicon redesign moves Git objects to Azure Blob Storage for horizontal scalability, uses Ref-CAS (Compare-And-Swap) for lock-free reference updates, and employs virtual replicas with background packfile compaction to maintain read performance under heavy write load.</p>
+
+<p><strong>「Impact」</strong> Enables massive AI agent workflows on single repositories without ref contention bottlenecks. Developers using GitHub for AI-driven automation will see higher push throughput and lower read latency once generally available. Private preview access required for early adoption.</p>
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/">Inside GitHub &#x27;s new Git storage architecture - The GitHub Blog</a></li>
+
+</ul>
+</details>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#github</code>, <code class="language-plaintext highlighter-rouge">#git</code>, <code class="language-plaintext highlighter-rouge">#storage-architecture</code>, <code class="language-plaintext highlighter-rouge">#ai-agents</code>, <code class="language-plaintext highlighter-rouge">#scale</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-9"></a></p>
+<h3 id="onlyfake-founder-pleads-guilty-deported-after-ai-fake-id-operation-️-7010"><a href="https://www.404media.co/an-ai-fraud-kingpins-confessions/">OnlyFake Founder Pleads Guilty, Deported After AI Fake ID Operation</a> ⭐️ 7.0/10</h3>
+
+<p>OnlyFake founder Nazarenko pleaded guilty in US court to operating an AI-powered fake ID platform that generated documents for $15 covering all 50 US states and 56 countries. The platform was used by North Korean IT workers, prompting UN expert concern. Nazarenko faced up to 15 years but received time served (approximately one year) and a deportation order, though he was subsequently detained by ICE.</p>
+
+<p>telegram · zaihuapd · Nov 7, 10:54</p>
+
+<p><strong>「Background」</strong> Horizon&#x27;s February 2026 digest reported OnlyFake creator Nazarenko charged and pleaded guilty to selling over 10,000 AI-generated fake IDs across 50 US states and 56 countries, generating $1.2M revenue. North Korean IT workers used platform for identity fraud. Current item confirms sentencing: time served (~1 year) and deportation ordered.</p>
+
+<p><strong>「Impact」</strong> Case demonstrates concrete, industrial-scale harm from accessible generative AI fraud tools enabling cross-border identity theft and use by state-linked actors. Highlights enforcement gap where platform operators face minimal incarceration despite global misuse.</p>
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.justice.gov/usao-sdny/pr/creator-onlyfake-charged-and-pleads-guilty-selling-more-10000-digital-fake">Creator Of “OnlyFake” Charged And Pleads Guilty To Selling ...</a></li>
+<li><a href="https://aiweekly.co/alerts/onlyfake-operator-nazarenko-10000-ai-fake-ids-12m">OnlyFake operator Nazarenko: 10,000 AI fake IDs, $1.2M</a></li>
+<li><a href="https://www.biometricupdate.com/202602/guilty-plea-in-onlyfake-digital-id-scheme">Guilty plea in OnlyFake digital ID scheme - Biometric Update</a></li>
+
+</ul>
+</details>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#AI fraud</code>, <code class="language-plaintext highlighter-rouge">#identity theft</code>, <code class="language-plaintext highlighter-rouge">#generative AI misuse</code>, <code class="language-plaintext highlighter-rouge">#cybercrime</code>, <code class="language-plaintext highlighter-rouge">#OnlyFake</code></p>
+
+<hr />
+
+<h2 id="financial-news">Financial News</h2>
+
+<p><a id="item-finance-news-1"></a></p>
+<h3 id="全国-335-万座寺院启动财务大检查-️-8010"><a href="https://www.163.com/dy/article/LB2VSRQD0556HNS1.html">全国 3.35 万座寺院启动财务大检查</a> ⭐️ 8.0/10</h3>
+
+<p>China launches nationwide financial audit of 33,500 temples and 9,000+ Taoist temples targeting commercialization with strict new controls.</p>
+
+<p>telegram · zaihuapd · Nov 7, 15:02</p>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#religious regulation</code>, <code class="language-plaintext highlighter-rouge">#financial audit</code>, <code class="language-plaintext highlighter-rouge">#commercialization crackdown</code>, <code class="language-plaintext highlighter-rouge">#China policy</code>, <code class="language-plaintext highlighter-rouge">#temple finance</code></p>
+
+<hr />
+
+<p><a id="item-finance-news-2"></a></p>
+<h3 id="the-ai-credit-card-is-getting-costlier-as-coreweave-bond-yield-tops-16-️-7010"><a href="https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html">The AI ‘credit card’ is getting costlier as CoreWeave bond yield tops 16%</a> ⭐️ 7.0/10</h3>
+
+<p>CoreWeave bonds yield 16% as AI debt markets show stress amid data center slowdown fears.</p>
+
+<p>rss · CNBC Finance · Nov 6, 17:09</p>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#AI infrastructure</code>, <code class="language-plaintext highlighter-rouge">#credit markets</code>, <code class="language-plaintext highlighter-rouge">#CoreWeave</code>, <code class="language-plaintext highlighter-rouge">#data centers</code>, <code class="language-plaintext highlighter-rouge">#bond yields</code></p>
+
+<hr />
+
+<p><a id="item-finance-news-3"></a></p>
+<h3 id="anthropic-plans-ipo-roadshow-next-week-targeting-nov-16-listing-week-️-7010"><a href="https://www.theinformation.com/briefings/anthropic-proceed-ipo-roadshow-next-week">Anthropic Plans IPO Roadshow Next Week Targeting Nov 16 Listing Week</a> ⭐️ 7.0/10</h3>
+
+<p>Anthropic plans to start IPO roadshow next week aiming to list week of November 16 before US Thanksgiving, per unnamed sources; prior $1.5T valuation target and $80B+ raise now uncertain after recent AI stock volatility.</p>
+
+<p>telegram · zaihuapd · Nov 7, 01:27</p>
+
+<p><strong>「Background」</strong> Anthropic, a major AI startup backed by Amazon and Google, previously targeted a $1.5 trillion valuation and $80B+ raise but now faces a volatile IPO window after a sharp AI-driven tech selloff on Wall Street. The company pledged 5% of shares to a public benefit fund for AI safety and biomedicine research.</p>
+
+<p><strong>「Impact」</strong> Anthropic IPO tests AI market appetite after recent tech volatility, sets valuation benchmark for AI sector and signals exit path for venture investors.</p>
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.theguardian.com/technology/2026/nov/06/us-tech-stock-ai-bubble-bursting-market-meltdown-explainer">US tech stock rout: is the AI bubble bursting? | Stock markets</a></li>
+<li><a href="https://www.ft.com/content/6c6fb412-5eca-4ed3-8b3d-f1c367712c5c?syn-25a6b1a6=1">Waiting for good IPO</a></li>
+<li><a href="https://intellectia.ai/blog/anthropic-ipo-analysis-2026">Anthropic IPO Analysis 2026: $2T Valuation and AI Market Impact</a></li>
+<li><a href="https://www.forbes.com/sites/ronschmelzer/2026/10/26/anthropic-ipo-ai-boom-valuation-risks/">Anthropic’s IPO Reveals The Biggest Risk To The AI Boom</a></li>
+<li><a href="https://www.globalbankingandfinance.com/anthropic-ipo-filing-put-ai-investment-boom-test/">Anthropic IPO Filing Tests AI Investment Boom Amid Market ...</a></li>
+
+</ul>
+</details>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#AI</code>, <code class="language-plaintext highlighter-rouge">#IPO</code>, <code class="language-plaintext highlighter-rouge">#Anthropic</code>, <code class="language-plaintext highlighter-rouge">#tech-stocks</code>, <code class="language-plaintext highlighter-rouge">#venture-capital</code></p>
+
+<hr />
+
+<p><a id="item-finance-news-4"></a></p>
+<h3 id="软银与-abb-拟分拆中国业务挽救机器人交易-️-7010"><a href="https://www.bloomberg.com/news/articles/2026-11-07/softbank-abb-weigh-china-carve-out-to-salvage-robotics-deal">软银与 ABB 拟分拆中国业务挽救机器人交易</a> ⭐️ 7.0/10</h3>
+
+<p>SoftBank and ABB weigh spinning off ABB Robotics China unit into separate entity to rescue $5.4B acquisition blocked by Chinese security regulators.</p>
+
+<p>telegram · zaihuapd · Nov 7, 11:24</p>
+
+<p><strong>Tags</strong>: <code class="language-plaintext highlighter-rouge">#M&amp;amp;A</code>, <code class="language-plaintext highlighter-rouge">#robotics</code>, <code class="language-plaintext highlighter-rouge">#China regulation</code>, <code class="language-plaintext highlighter-rouge">#SoftBank</code>, <code class="language-plaintext highlighter-rouge">#ABB</code></p>
+
+<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[From 43 items, 13 important content pieces were selected]]></summary></entry><entry xml:lang="zh"><title type="html">Horizon Summary: 2026-11-07 (ZH)</title><link href="https://hqzxjczx.github.io/horizon-daily/2026/11/07/summary-zh.html" rel="alternate" type="text/html" title="Horizon Summary: 2026-11-07 (ZH)" /><published>2026-11-07T00:00:00+00:00</published><updated>2026-11-07T00:00:00+00:00</updated><id>https://hqzxjczx.github.io/horizon-daily/2026/11/07/summary-zh</id><content type="html" xml:base="https://hqzxjczx.github.io/horizon-daily/2026/11/07/summary-zh.html"><![CDATA[<blockquote>
+  <p>从 43 条内容中筛选出 13 条重要资讯。</p>
+</blockquote>
+
+<hr />
+
+<p><strong>科技新闻</strong></p>
+<ol>
+  <li><a href="#item-tech-news-1">Jev 路由到 Opus 实现同等精度成本降 4 倍</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-2">Libghostty 1.0 发布稳定终端模拟器库</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-3">苹果自 2022 年起在所有 Mac 上部署未文档化家庭成员分类器守护进程构建个人知识图谱</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-4">Ant Ling 发布 Ling-3.2-flash：560B/25B 原生多模态 MoE，1M 上下文</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-5">Boson AI 发布 45B MoE 全双工模型 Higgs Realtime Duplex</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-6">Claude Code 搜索请求泄露登录邮箱，v2.1.317 部分修复可绕过</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-7">苹果发布 HALO 人形机器人系统 基于千问模型实现仿真到实机迁移</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-8">GitHub Rubicon 架构实现 7200 推送/秒</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-tech-news-9">OnlyFake 创始人认罪被驱逐 AI 假证平台覆盖 50 州 56 国</a> ⭐️ 7.0/10</li>
+</ol>
+
+<p><strong>财经新闻</strong></p>
+<ol>
+  <li><a href="#item-finance-news-1">全国 3.35 万座寺院启动财务大检查</a> ⭐️ 8.0/10</li>
+  <li><a href="#item-finance-news-2">The AI ‘credit card’ is getting costlier as CoreWeave bond yield tops 16%</a> ⭐️ 7.0/10</li>
+  <li><a href="#item-finance-news-3">Anthropic 拟下周启动 IPO 路演，目标 11 月中旬上市</a> ⭐️ 7.0/10</li>
+  <li><a href="#item-finance-news-4">软银与 ABB 拟分拆中国业务挽救机器人交易</a> ⭐️ 7.0/10</li>
+</ol>
+
+<hr />
+
+<h2 id="科技新闻">科技新闻</h2>
+
+<p><a id="item-tech-news-1"></a></p>
+<h3 id="jev-路由到-opus-实现同等精度成本降-4-倍-️-8010"><a href="https://hightouch.com/blog/llm-judges-identity-resolution">Jev 路由到 Opus 实现同等精度成本降 4 倍</a> ⭐️ 8.0/10</h3>
+
+<p>Hightouch 博客展示模型级联路由：Jev（Qwen 2.5 32B）作为路由器，仅在需要时升级调用 Claude Opus。实测达到 Opus 级精度，成本降至 1/4，输入 token 减少 65%。Jev 的置信度评分可靠，低于阈值时触发升级。</p>
+
+<p>hackernews · theanomaly · 11月6日 19:48 · <a href="https://news.ycombinator.com/item?id=50397429">社区讨论</a></p>
+
+<p><strong>「背景」</strong> LLM-as-a-Judge 让大模型充当评估器，但推理型 Judge 昂贵且慢。ArXiv 论文 JEV-as-a-Judge 提出仅输出标签概率的轻量决策模型 Jev，按置信度决定是否升级到推理 Judge。Hightouch 将该级联用于身份解析，Jev 处理易例，低置信时转交 Claude Opus。</p>
+
+<p><strong>「影响」</strong> 编码代理 Memdoor 实测：读取密集型任务输入 token 减少 63-65%，模式调用减少 40-45%。适用于文件读取、grep 大文件夹等场景。</p>
+
+<p><strong>「社区讨论」</strong> 用户 xlayn 报告 Qwen 3.8 27B 能从 Haiku/Sonnet/Opus 获取良好答案。guregodevo 确认 Jev 在编码代理中成为主流路由方式。andai 指出关键在于 Jev 置信度评分可靠，Luna 虽更准但置信度不可靠无法做回退决策。</p>
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://arxiv.org/pdf/2609.26550v2">JEV-as-a-Judge: Accept When Confident, Escalate When Unsure</a></li>
+
+</ul>
+</details>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#LLM-routing</code>, <code class="language-plaintext highlighter-rouge">#cost-optimization</code>, <code class="language-plaintext highlighter-rouge">#model-cascading</code>, <code class="language-plaintext highlighter-rouge">#AI-systems</code>, <code class="language-plaintext highlighter-rouge">#software-engineering</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-2"></a></p>
+<h3 id="libghostty-10-发布稳定终端模拟器库-️-8010"><a href="https://mitchellh.com/writing/libghostty-1-0">Libghostty 1.0 发布稳定终端模拟器库</a> ⭐️ 8.0/10</h3>
+
+<p>Libghostty 1.0 发布，提供稳定的终端模拟器库，为新一代终端和 AI 编码工具提供支持。由 Mitchell Hashimoto（Vagrant、Terraform 创始人）开发，采用 Zig 语言实现，精心设计 C ABI，使用不透明句柄和枚举键控的 getter/setter。支持 Kitty 图形协议内联图像。已有 herdr、cmux、pi agent 等工具基于此库构建。</p>
+
+<p>hackernews · mfiguiere · 11月6日 23:30 · <a href="https://news.ycombinator.com/item?id=50399933">社区讨论</a></p>
+
+<p><strong>「背景」</strong> 2025 年 9 月 Mitchell Hashimoto 发布《Libghostty Is Coming》，阐述将 Ghostty 核心提取为可嵌入 C 库的愿景，当时 Zig 模块刚合并、C API 尚不存在、仅 Ghostty 自用。</p>
+
+<p><strong>「影响」</strong> 开发者可直接使用 libghostty 构建终端应用，无需重写模拟器核心；稳定 ABI 保证跨版本兼容性，降低集成维护成本。</p>
+
+<p><strong>「社区讨论」</strong> 社区称赞 Mitchell 未将自家竞品 Rex 混入宣传；开发者关注其 C API 设计模式（不透明句柄、枚举键控 getter/setter）作为参考；用户反馈 Ghostty 在 TUI 程序（如 pi agent）中表现优异，Kitty 图形协议内联图像、OSC-8 超链接、视口滚动性能均获好评。</p>
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://mitchellh.com/writing/libghostty-is-coming">Libghostty Is Coming – Mitchell Hashimoto</a></li>
+
+</ul>
+</details>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#terminal-emulator</code>, <code class="language-plaintext highlighter-rouge">#library</code>, <code class="language-plaintext highlighter-rouge">#zig</code>, <code class="language-plaintext highlighter-rouge">#abi-stability</code>, <code class="language-plaintext highlighter-rouge">#developer-tools</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-3"></a></p>
+<h3 id="苹果自-2022-年起在所有-mac-上部署未文档化家庭成员分类器守护进程构建个人知识图谱-️-8010"><a href="https://8rank.ai/game/apple-intelligence-personal-knowledge-graph">苹果自 2022 年起在所有 Mac 上部署未文档化家庭成员分类器守护进程构建个人知识图谱</a> ⭐️ 8.0/10</h3>
+
+<p>苹果自 2022 年起在所有 Mac 上静默部署未文档化守护进程，构建详细个人知识图谱，追踪用户关系、通信、位置、活动及社交连接。研究者 infwhispers 发现这些守护进程在用户未知情、未同意情况下运行，即使关闭 Siri 和 Apple Intelligence 功能仍持续收集数据。后续研究证实该系统用于本地 LLM 上下文理解（如识别"老板"、"James"等指代），但数据不上传云端。</p>
+
+<p>hackernews · infwhispers · 11月7日 09:46 · <a href="https://news.ycombinator.com/item?id=50403097">社区讨论</a></p>
+
+<p><strong>「背景」</strong> Apple Community 2024 年 1 月讨论已指出 macOS 包含 intelligenceplatformd 与 knowledgeconstructiond 两个守护进程，协同分析用户内容构建知识图谱，官方解释用于恶意软件防护。2026 年 5 月开发者在 dev.to 发文发现 Apple 已在本地构建完整个人知识图谱，包含 iMessage、照片、日历等数据源。</p>
+
+<p><strong>「影响」</strong> 注重隐私的用户发现即使禁用所有智能功能，系统仍在后台构建社交图谱，引发信任危机。部分用户考虑迁移至 Linux（如 Debian）以完全控制系统行为。企业环境可能面临合规风险，因员工设备未经同意收集人际关系数据。</p>
+
+<p><strong>「社区讨论」</strong> 社区意见分歧：支持者认为本地处理不上传云端，类似汽车导航记忆常去地点，为 Siri 提供必要上下文；反对者强调缺乏透明度和选择权，即使关闭相关功能仍运行属于越界行为。作者 infwhispers 在讨论中回应提问并提供后续研究链接。</p>
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://dev.to/niclydon/i-built-a-personal-knowledge-graph-apple-had-already-built-one-on-my-laptop-54l8">I Built a Personal Knowledge Graph. Apple Had Already Built ...</a></li>
+<li><a href="https://discussions.apple.com/thread/255450862">What is Graph.db in the ~/Library/Intelli… - Apple Community</a></li>
+
+</ul>
+</details>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#privacy</code>, <code class="language-plaintext highlighter-rouge">#apple</code>, <code class="language-plaintext highlighter-rouge">#on-device-ml</code>, <code class="language-plaintext highlighter-rouge">#knowledge-graph</code>, <code class="language-plaintext highlighter-rouge">#undocumented-features</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-4"></a></p>
+<h3 id="ant-ling-发布-ling-32-flash560b25b-原生多模态-moe1m-上下文-️-8010"><a href="https://www.reddit.com/r/MachineLearning/comments/1xpye7g/ant_ling_introduces_ling32flash_560b25b_native/">Ant Ling 发布 Ling-3.2-flash：560B/25B 原生多模态 MoE，1M 上下文</a> ⭐️ 8.0/10</h3>
+
+<p>Ant Ling 发布 Ling-3.2-flash，采用原生多模态 MoE 架构，总参数 560B，激活参数 25B，支持 1M token 上下文窗口。模型原生支持文本、图像、视频输入。基准测试显示：MathVision 96.80、Humanity&#x27;s Last Exam-MM 30.12、OmniDocBench 1.5 92.21、AndroidWorld 85.63。提供 OpenAI 和 Anthropic 兼容 API。演示 PDF 转代码、GUI 控制、3D 重建、多智能体工作流。</p>
+
+<p>reddit · r/MachineLearning · /u/the-hollow-soul · 11月7日 05:21</p>
+
+<p><strong>「背景」</strong> Ant Ling 此前发布 Ling-3.1-flash，同为 560B/25B MoE 架构，但上下文窗口为 262,144 token（约 256K），输出上限 32,768 token，且未开放权重。本次 3.2-flash 将上下文扩展至 1M token，保持原生多模态（文本/图像/视频）与 OpenAI/Anthropic API 兼容。</p>
+
+<p><strong>「影响」</strong> 开发者可直接用 OpenAI/Anthropic 兼容 API 调用 560B/25B MoE 模型，支持 1M 上下文与原生多模态（文本/图像/视频）。基准显示数学视觉 96.8、文档理解 92.2、Android 任务 85.6，适合 PDF 转代码、GUI 控制、多智能体工作流。</p>
+
+<p><strong>「社区讨论」</strong> Reddit 评论区讨论集中在模型规模与激活参数比（560B/25B）的效率优势、1M 上下文在实际部署中的显存需求、以及 API 兼容性对迁移成本的降低。部分用户质疑基准测试的独立验证情况。</p>
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.orcarouter.ai/blog/ling-3-1-flash-announced-not-open-weights">Ling - 3 .1- flash : announced, not open — 560 B MoE , 1M context</a></li>
+<li><a href="https://artificialwatch.com/wire/ant-ling-3-1-flash">Ant Group&#x27;s Ling 3 .1 Flash is out: ~ 560 B MoE , weights promised &#x27;soon&amp;a...</a></li>
+
+</ul>
+</details>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#LLM</code>, <code class="language-plaintext highlighter-rouge">#MoE</code>, <code class="language-plaintext highlighter-rouge">#multimodal</code>, <code class="language-plaintext highlighter-rouge">#long-context</code>, <code class="language-plaintext highlighter-rouge">#model-release</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-5"></a></p>
+<h3 id="boson-ai-发布-45b-moe-全双工模型-higgs-realtime-duplex-️-8010"><a href="https://www.reddit.com/r/MachineLearning/comments/1xpn5pv/higgs_realtime_duplex_a_45b_moe_fullduplex_model/">Boson AI 发布 45B MoE 全双工模型 Higgs Realtime Duplex</a> ⭐️ 8.0/10</h3>
+
+<p>Boson AI 发布 Higgs Realtime Duplex，45B MoE 全双工模型，可同时处理音频、视频、文本流，后台并行推理、工具调用与任务委派。非开放权重，仅提供 Duplex API 等待名单；早期基于轮次的 Higgs Realtime 已可用。架构将所有模态切为 160 ms 固定块：音频输入 1 token/块 (6.25 tokens/s)，音频输出 2 tokens/块 (12.5 tokens/s)，视频输入每 6 块一帧 (~12 tokens)，人脸输出 2 latents/块，文本同步输入输出，静音也编码为块供模型决定回声/打断/静默。综合吞吐约 2.6K tokens/分 (音视频)，含思考达 2.6K–5K tokens/分。零样本部署：短参考音频定音色、单张参考图定人脸、文本提示定行为。音频用因果 flow-matching 解码器 (2 帧/块)，人脸用条件因果 DiT。训练：从文本预训练 LLM 起步，自建 H100 集群 (Megatron) 继续预训练 ~2T tokens 文本/音频/视频；后训练用多教师在线策略蒸馏，专家教师经 RL (含 GRPO) 训练对话、时序、委派、任务完成，再在模拟环境 (真实时序、打断、重叠语音、背景噪声) 自我改进循环。基准对比 (实验室复现)：Big Bench Audio 98.9 (vs TML 276B 96.5, OpenAI 97, Google 98)，Audio MultiChallenge APR 44.9 (vs 43.4/48.5/36.1)，Full-Duplex-Bench v1.5 75.5 (vs 77.8/80.1/54.3)，QIVD 流式 56.0 (vs 54.0/58.2/56.1)，ProactiveVideoQA PAUC 31.9 (vs 33.5/25.0/–)，τ-Voice pass@1 69.8 (vs –/74.5/68.6)，IFEval 94.1 (vs 89.7/95.2/90.0)。OpenAI 最佳设置在 7 项中 5 项领先 1–5 分。团队结论：规模、数据、训练比参数量更关键；刻意保持中等规模，目标模型小时成本约为人工小时成本 1/10。</p>
+
+<p>reddit · r/MachineLearning · /u/Cali_Cobarde · 11月6日 20:23</p>
+
+<p><strong>「背景」</strong> Boson AI 此前发布过基于轮次的 Higgs Realtime 模型，采用传统「听完→思考→说话」流水线。全双工架构改为并行处理音频、视频、文本流，模型可在输出语音的同时持续接收输入、后台推理与调用工具。</p>
+
+<p><strong>「影响」</strong> Duplex 仅提供 API 等待列表，权重不开源，开发者无法立即自行部署或复现；现有可用的是上一代基于轮次的 Higgs Realtime。若基准性能在生产环境成立，模型推理成本约为人工每小时成本的 1/10，可能降低实时多模态交互应用的运营门槛。</p>
+
+<p><strong>「社区讨论」</strong> Reddit 评论区主要围绕闭源/仅 API 等待名单、基准可复现性、与 OpenAI/Google 实时模型的实际差距展开。有用户质疑未开放权重限制学术复现，也有开发者关注 160 ms 块延迟对实际交互体验的影响。无实质性技术细节补充。</p>
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.boson.ai/blog/higgs-realtime-duplex">Higgs Realtime Duplex: Face to Face, Working in the ...</a></li>
+
+</ul>
+</details>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#multimodal</code>, <code class="language-plaintext highlighter-rouge">#real-time</code>, <code class="language-plaintext highlighter-rouge">#MoE</code>, <code class="language-plaintext highlighter-rouge">#voice-AI</code>, <code class="language-plaintext highlighter-rouge">#full-duplex</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-6"></a></p>
+<h3 id="claude-code-搜索请求泄露登录邮箱v21317-部分修复可绕过-️-8010"><a href="https://github.com/anthropics/claude-code/issues/107757">Claude Code 搜索请求泄露登录邮箱，v2.1.317 部分修复可绕过</a> ⭐️ 8.0/10</h3>
+
+<p>Claude Code 在联网搜索请求中发送用户登录邮箱，导致开发者收到大量诈骗邮件。Anthropic 承认为解决模型乱填作者名，曾将登录邮箱放入模型上下文。问题自 7 月被报告，邮箱曾发送至 Wikipedia、美国 SEC 等站点。v2.1.317 增加拦截，但可被 Python 脚本绕过。Anthropic 计划下一版本彻底移除上下文中的登录邮箱。</p>
+
+<p>telegram · zaihuapd · 11月7日 08:09</p>
+
+<p><strong>「背景」</strong> Claude Code 是 Anthropic 推出的 AI 编程助手，支持在终端中通过自然语言编写、修改代码并执行联网搜索。此前为解决模型在生成内容时随意编造作者名的问题，工程团队将用户登录邮箱放入模型上下文，导致该邮箱随联网搜索请求一并发送给 Wikipedia、美国证券交易委员会等第三方站点。问题最早于 2026 年 7 月被报告，v2.1.317 版本加入拦截逻辑，但可被 Python 脚本绕过。</p>
+
+<p><strong>「影响」</strong> 使用 Claude Code 联网搜索功能的开发者登录邮箱已暴露给第三方站点，面临垃圾邮件和钓鱼风险。当前版本修复不完整，建议暂停使用联网搜索或等待下一版本彻底修复。</p>
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://github.com/anthropics/claude-code/issues/107757">Bug Report: Privacy violation in User-Agent header · Issue # 107757 ...</a></li>
+<li><a href="https://claude.com/product/claude-code">Claude Code by Anthropic | AI Coding Agent, Terminal, IDE</a></li>
+
+</ul>
+</details>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#security</code>, <code class="language-plaintext highlighter-rouge">#privacy</code>, <code class="language-plaintext highlighter-rouge">#claude-code</code>, <code class="language-plaintext highlighter-rouge">#anthropic</code>, <code class="language-plaintext highlighter-rouge">#vulnerability</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-7"></a></p>
+<h3 id="苹果发布-halo-人形机器人系统-基于千问模型实现仿真到实机迁移-️-8010"><a href="https://weibo.com/1642634100/RqjjGllvw">苹果发布 HALO 人形机器人系统 基于千问模型实现仿真到实机迁移</a> ⭐️ 8.0/10</h3>
+
+<p>苹果研究团队 11 月 4 日在 arXiv 发布预印本，披露人形机器人自主控制系统 HALO，在宇树 G1 上验证仿真到实机迁移。HALO 采用三层架构：上层用 Qwen3.6-35B-A3B 编排任务，中层用 Qwen3.5-2B 生成动作，底层为强化学习训练的动作跟踪器。系统可将仿真环境学到的动作迁移至陌生真实房间执行。研究团队已开源数据生成、模型训练与部署代码。</p>
+
+<p>telegram · zaihuapd · 11月7日 13:35</p>
+
+<p><strong>「背景」</strong> Unitree G1 是宇树科技推出的 27-29 自由度人形机器人平台，售价约 1.6 万美元，常用于仿真到实物迁移研究。千问是阿里巴巴开源的大语言模型系列，Qwen2.5-35B 与 Qwen2.5-2B 分别对应不同参数规模，已在多模态任务规划与轻量化部署场景得到验证。苹果此前未公开发布过完整人形机器人控制栈，HALO 为其在具身智能方向的首个系统级开源成果。</p>
+
+<p><strong>「影响」</strong> 开发者可基于苹果开源 HALO 代码库，在宇树 G1 上复现仿真到实物迁移，采用 Qwen 大模型分层架构：35B 规划任务、2B 生成动作、RL 跟踪器执行。苹果入局具身智能验证国产基座模型在机器人控制中可行性。</p>
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://huggingface.co/Qwen/Qwen3.8-27B">Qwen / Qwen 3.8-27B · Hugging Face</a></li>
+
+</ul>
+</details>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#robotics</code>, <code class="language-plaintext highlighter-rouge">#embodied-ai</code>, <code class="language-plaintext highlighter-rouge">#apple</code>, <code class="language-plaintext highlighter-rouge">#qwen</code>, <code class="language-plaintext highlighter-rouge">#sim2real</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-8"></a></p>
+<h3 id="github-rubicon-架构实现-7200-推送秒-️-8010"><a href="https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/">GitHub Rubicon 架构实现 7200 推送/秒</a> ⭐️ 8.0/10</h3>
+
+<p>GitHub 发布代号 Rubicon 的新 Git 存储架构，内部测试支持 5000 个 AI 智能体并发操作单个仓库，每秒处理 7200 次推送，读取延迟保持低水平。架构将 Git 对象存入 Azure Blob Storage，引用状态由 Ref-CAS 管理，虚拟副本处理读写，后台节点压缩数据包。目前处于有限私有预览阶段，将逐步扩大推广范围。</p>
+
+<p>telegram · zaihuapd · 11月7日 14:12</p>
+
+<p><strong>「背景」</strong> GitHub 此前的 Git 存储依赖单机文件系统与多副本复制，难以支撑数千 AI 智能体并发向同一仓库推送的新负载。Rubicon 将对象数据迁移至 Azure Blob Storage，引用状态交由 Ref-CAS（引用比较并交换）原子操作管理，虚拟副本分离读写路径，后台再做 packfile 压缩，从而突破原有写入吞吐瓶颈。</p>
+
+<p><strong>「影响」</strong> 大规模 AI 智能体协作场景下，单仓库推送吞吐量提升至 7200 次/秒，解决传统 Git 存储在高并发写入下的性能瓶颈。开发者可预期未来 GitHub 支持更大规模自动化工作流，但目前仅限私有预览，通用可用时间未公布。</p>
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/">Inside GitHub &#x27;s new Git storage architecture - The GitHub Blog</a></li>
+
+</ul>
+</details>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#github</code>, <code class="language-plaintext highlighter-rouge">#git</code>, <code class="language-plaintext highlighter-rouge">#storage-architecture</code>, <code class="language-plaintext highlighter-rouge">#ai-agents</code>, <code class="language-plaintext highlighter-rouge">#scale</code></p>
+
+<hr />
+
+<p><a id="item-tech-news-9"></a></p>
+<h3 id="onlyfake-创始人认罪被驱逐-ai-假证平台覆盖-50-州-56-国-️-7010"><a href="https://www.404media.co/an-ai-fraud-kingpins-confessions/">OnlyFake 创始人认罪被驱逐 AI 假证平台覆盖 50 州 56 国</a> ⭐️ 7.0/10</h3>
+
+<p>OnlyFake 创始人 Nazarenko 认罪，平台用生成式 AI 自动生成假 ID，价格 15 美元，覆盖美国 50 州驾照、护照及 56 国证件。朝鲜 IT 工作者曾使用。法判已服刑期约一年并驱逐。</p>
+
+<p>telegram · zaihuapd · 11月7日 10:54</p>
+
+<p><strong>「背景」</strong> OnlyFake 是利用生成式 AI 批量生成假身份证件的平台，覆盖美国 50 州驾照、护照及约 56 国证件，单价低至 15 美元。此前 Horizon 摘要曾报道该平台生成超 1 万张假证、涉案金额达 120 万美元，且被朝鲜 IT 工作者滥用。</p>
+
+<p><strong>「影响」</strong> 案例显示生成式 AI 被工业化滥用于身份欺诈，低成本自动化工具使大规模伪造证件成为现实，执法需跨国合作打击此类平台。</p>
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.justice.gov/usao-sdny/pr/creator-onlyfake-charged-and-pleads-guilty-selling-more-10000-digital-fake">Creator Of “OnlyFake” Charged And Pleads Guilty To Selling ...</a></li>
+<li><a href="https://aiweekly.co/alerts/onlyfake-operator-nazarenko-10000-ai-fake-ids-12m">OnlyFake operator Nazarenko: 10,000 AI fake IDs, $1.2M</a></li>
+<li><a href="https://www.biometricupdate.com/202602/guilty-plea-in-onlyfake-digital-id-scheme">Guilty plea in OnlyFake digital ID scheme - Biometric Update</a></li>
+
+</ul>
+</details>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#AI fraud</code>, <code class="language-plaintext highlighter-rouge">#identity theft</code>, <code class="language-plaintext highlighter-rouge">#generative AI misuse</code>, <code class="language-plaintext highlighter-rouge">#cybercrime</code>, <code class="language-plaintext highlighter-rouge">#OnlyFake</code></p>
+
+<hr />
+
+<h2 id="财经新闻">财经新闻</h2>
+
+<p><a id="item-finance-news-1"></a></p>
+<h3 id="全国-335-万座寺院启动财务大检查-️-8010"><a href="https://www.163.com/dy/article/LB2VSRQD0556HNS1.html">全国 3.35 万座寺院启动财务大检查</a> ⭐️ 8.0/10</h3>
+
+<p>China launches nationwide financial audit of 33,500 temples and 9,000+ Taoist temples targeting commercialization with strict new controls.</p>
+
+<p>telegram · zaihuapd · 11月7日 15:02</p>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#religious regulation</code>, <code class="language-plaintext highlighter-rouge">#financial audit</code>, <code class="language-plaintext highlighter-rouge">#commercialization crackdown</code>, <code class="language-plaintext highlighter-rouge">#China policy</code>, <code class="language-plaintext highlighter-rouge">#temple finance</code></p>
+
+<hr />
+
+<p><a id="item-finance-news-2"></a></p>
+<h3 id="the-ai-credit-card-is-getting-costlier-as-coreweave-bond-yield-tops-16-️-7010"><a href="https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html">The AI ‘credit card’ is getting costlier as CoreWeave bond yield tops 16%</a> ⭐️ 7.0/10</h3>
+
+<p>CoreWeave bonds yield 16% as AI debt markets show stress amid data center slowdown fears.</p>
+
+<p>rss · CNBC Finance · 11月6日 17:09</p>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#AI infrastructure</code>, <code class="language-plaintext highlighter-rouge">#credit markets</code>, <code class="language-plaintext highlighter-rouge">#CoreWeave</code>, <code class="language-plaintext highlighter-rouge">#data centers</code>, <code class="language-plaintext highlighter-rouge">#bond yields</code></p>
+
+<hr />
+
+<p><a id="item-finance-news-3"></a></p>
+<h3 id="anthropic-拟下周启动-ipo-路演目标-11-月中旬上市-️-7010"><a href="https://www.theinformation.com/briefings/anthropic-proceed-ipo-roadshow-next-week">Anthropic 拟下周启动 IPO 路演，目标 11 月中旬上市</a> ⭐️ 7.0/10</h3>
+
+<p>Anthropic 计划下周启动 IPO 路演，拟于 11 月 16 日当周、美国感恩节前挂牌上市；此前市场预期估值 1.5 万亿美元、募资超 800 亿美元，但近期 AI 股票波动可能迫使其降低估值。</p>
+
+<p>telegram · zaihuapd · 11月7日 01:27</p>
+
+<p><strong>「背景」</strong> Anthropic 为 OpenAI 前员工创立的 AI 公司，以 Claude 模型闻名；此次拟 IPO 系 AI 热潮后首个超大型独角兽上市，前期市场预期估值 1.5 万亿美元、募资超 800 亿美元，但近两周美股科技板块因 AI 支出担忧大幅波动，迫使估值预期下调。</p>
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.theguardian.com/technology/2026/nov/06/us-tech-stock-ai-bubble-bursting-market-meltdown-explainer">US tech stock rout: is the AI bubble bursting? | Stock markets</a></li>
+<li><a href="https://www.ft.com/content/6c6fb412-5eca-4ed3-8b3d-f1c367712c5c?syn-25a6b1a6=1">Waiting for good IPO</a></li>
+
+</ul>
+</details>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#AI</code>, <code class="language-plaintext highlighter-rouge">#IPO</code>, <code class="language-plaintext highlighter-rouge">#Anthropic</code>, <code class="language-plaintext highlighter-rouge">#tech-stocks</code>, <code class="language-plaintext highlighter-rouge">#venture-capital</code></p>
+
+<hr />
+
+<p><a id="item-finance-news-4"></a></p>
+<h3 id="软银与-abb-拟分拆中国业务挽救机器人交易-️-7010"><a href="https://www.bloomberg.com/news/articles/2026-11-07/softbank-abb-weigh-china-carve-out-to-salvage-robotics-deal">软银与 ABB 拟分拆中国业务挽救机器人交易</a> ⭐️ 7.0/10</h3>
+
+<p>SoftBank and ABB weigh spinning off ABB Robotics China unit into separate entity to rescue $5.4B acquisition blocked by Chinese security regulators.</p>
+
+<p>telegram · zaihuapd · 11月7日 11:24</p>
+
+<p><strong>标签</strong>: <code class="language-plaintext highlighter-rouge">#M&amp;amp;A</code>, <code class="language-plaintext highlighter-rouge">#robotics</code>, <code class="language-plaintext highlighter-rouge">#China regulation</code>, <code class="language-plaintext highlighter-rouge">#SoftBank</code>, <code class="language-plaintext highlighter-rouge">#ABB</code></p>
+
+<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[从 43 条内容中筛选出 13 条重要资讯。]]></summary></entry><entry xml:lang="en"><title type="html">Horizon Summary: 2026-11-06 (EN)</title><link href="https://hqzxjczx.github.io/horizon-daily/2026/11/06/summary-en.html" rel="alternate" type="text/html" title="Horizon Summary: 2026-11-06 (EN)" /><published>2026-11-06T00:00:00+00:00</published><updated>2026-11-06T00:00:00+00:00</updated><id>https://hqzxjczx.github.io/horizon-daily/2026/11/06/summary-en</id><content type="html" xml:base="https://hqzxjczx.github.io/horizon-daily/2026/11/06/summary-en.html"><![CDATA[<blockquote>
+  <p>Analyzed 46 items, but none met the importance threshold.</p>
+</blockquote>
+
+<p>No significant developments today. This might indicate:</p>
+<ul>
+  <li>A quiet day in your tracked sources</li>
+  <li>The AI score threshold is too high</li>
+  <li>Your information sources need expansion</li>
+</ul>
+
+<p>Consider:</p>
+<ol>
+  <li>Lowering the configured profile threshold</li>
+  <li>Adding more diverse information sources</li>
+  <li>Checking if the AI model is working correctly</li>
+</ol>]]></content><author><name></name></author><summary type="html"><![CDATA[Analyzed 46 items, but none met the importance threshold.]]></summary></entry><entry xml:lang="zh"><title type="html">Horizon Summary: 2026-11-06 (ZH)</title><link href="https://hqzxjczx.github.io/horizon-daily/2026/11/06/summary-zh.html" rel="alternate" type="text/html" title="Horizon Summary: 2026-11-06 (ZH)" /><published>2026-11-06T00:00:00+00:00</published><updated>2026-11-06T00:00:00+00:00</updated><id>https://hqzxjczx.github.io/horizon-daily/2026/11/06/summary-zh</id><content type="html" xml:base="https://hqzxjczx.github.io/horizon-daily/2026/11/06/summary-zh.html"><![CDATA[<blockquote>
+  <p>已分析 46 条内容，但没有达到重要性阈值的条目。</p>
+</blockquote>
+
+<p>今日暂无重要动态，可能原因：</p>
+<ul>
+  <li>今天关注的信息源较平静</li>
+  <li>AI 评分阈值设置过高</li>
+  <li>信息源种类有待扩充</li>
+</ul>
+
+<p>建议：</p>
+<ol>
+  <li>降低当前 Profile 的过滤阈值</li>
+  <li>添加更多多样化的信息源</li>
+  <li>检查 AI 模型是否正常工作</li>
+</ol>]]></content><author><name></name></author><summary type="html"><![CDATA[已分析 46 条内容，但没有达到重要性阈值的条目。]]></summary></entry><entry xml:lang="en"><title type="html">Horizon Summary: 2026-11-05 (EN)</title><link href="https://hqzxjczx.github.io/horizon-daily/2026/11/05/summary-en.html" rel="alternate" type="text/html" title="Horizon Summary: 2026-11-05 (EN)" /><published>2026-11-05T00:00:00+00:00</published><updated>2026-11-05T00:00:00+00:00</updated><id>https://hqzxjczx.github.io/horizon-daily/2026/11/05/summary-en</id><content type="html" xml:base="https://hqzxjczx.github.io/horizon-daily/2026/11/05/summary-en.html"><![CDATA[<blockquote>
   <p>From 42 items, 8 important content pieces were selected</p>
 </blockquote>
 
